@@ -15,9 +15,8 @@ void setup()
     }
 
     MySerial.begin(57600);
-    do_flash_led(LED_BLUE);
 
-    MySerial.println("SODAQ LoRaONE test_gps is starting ...");
+    MySerial.println("SODAQ LoRaONE test GPS");
 
     sodaq_gps.init(GPS_ENABLE);
     sodaq_gps.setDiag(MySerial);
